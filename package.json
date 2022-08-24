@@ -1,0 +1,12 @@
+{
+  "name": "ruby_parser",
+  "version": "1.0.0",
+  "description": "JS Ruby file parser",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ruby", "parser"],
+  "author": "Pablo Schaffner",
+  "license": "MIT"
+}
