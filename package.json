@@ -1,12 +1,20 @@
 {
   "name": "ruby_parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS Ruby file parser",
   "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["ruby", "parser"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puntorigen/ruby_parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/puntorigen/ruby_parser/issues"
+  },
+  "homepage": "https://github.com/puntorigen/ruby_parser#readme",
   "author": "Pablo Schaffner",
   "license": "MIT"
 }
