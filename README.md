@@ -13,6 +13,6 @@ const parsed = parserObj.parse({
 const info = parserObj.getInfo();
 const methods = parserObj.getMethods();
 const comments = parserObj.getComments();
-const ast = parserObj.getAst(); // also, parserObj.parse returns the ast
+const ast = parserObj.getAst(); // also, parserObj.parse method returns the ast
 ```
 
