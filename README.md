@@ -10,9 +10,9 @@ const parsed = parserObj.parse({
     // rubyString: `i = 7` // you can use filePath or rubyString
 });
 
-const info = parsed.getInfo();
-const methods = parsed.getMethods();
-const comments = parsed.getComments();
-const ast = parsed.getAst();
+const info = parserObj.getInfo();
+const methods = parserObj.getMethods();
+const comments = parserObj.getComments();
+const ast = parserObj.getAst(); // also, parserObj.parse returns the ast
 ```
 
