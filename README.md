@@ -3,11 +3,16 @@ Simple class for parsing ruby files, getting their methods, arguments, comments 
 
 ```js
 const ruby = require('ruby_parser');
-const parser = new ruby('tests/test.rb');
+const parserObj = new ruby();
 
-const info = parser.getInfo();
-const methods = parser.getMethods();
-const comments = parser.getComments();
-const ast = parser.getAst();
+const parsed = parserObj.parse({
+    filePath: 'tests/test.rb',
+    // rubyString: `i = 7` // you can use filePath or rubyString
+});
+
+const info = parsed.getInfo();
+const methods = parsed.getMethods();
+const comments = parsed.getComments();
+const ast = parsed.getAst();
 ```
 

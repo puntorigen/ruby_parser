@@ -1,6 +1,6 @@
 {
   "name": "ruby_parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JS Ruby file parser",
   "module": "index.js",
   "scripts": {

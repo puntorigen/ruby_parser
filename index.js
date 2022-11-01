@@ -1,10 +1,21 @@
 class rubyParser {
-    constructor(file) {
-        const parser = require('./nodejs-lib-ruby-parser');
-        const fs = require('fs');
-        this.file = file;
-        this.source = fs.readFileSync(this.file, 'utf8');
-        this.parsed = parser.parse(this.source);
+    parser;
+    parsed;
+    fs;
+    constructor() {
+        this.parser = require('./nodejs-lib-ruby-parser');
+        this.fs = require('fs');
+    }
+
+    parse({filePath, rubyString}) {
+        if (typeof rubyString === "string") {
+            this.parsed = this.parser.parse(rubyString);
+            return this.parsed.ast;
+        } else if (typeof filePath === "string") {
+            this.source = fs.readFileSync(filePath, 'utf8');
+            this.parsed = this.parser.parse(this.source);
+            return this.parsed.ast;
+        }
     }
     getInfo() {
         return {
